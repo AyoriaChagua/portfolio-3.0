@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes color-top  {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.expand-text {
+  overflow: hidden;
+  transition: letter-spacing 0.3s ease;
+}
+
+
+.expand-text:hover {
+  letter-spacing: .5px;
+}
+
+.animated-gradient-text {
+  background: linear-gradient(to right, #3e3bff 0%, #237BFE 58%);
+  background-size: 150% 150%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: color-top 5s ease-in-out infinite;
+}
+
+.blur-background {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
