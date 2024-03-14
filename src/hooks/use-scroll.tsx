@@ -8,7 +8,7 @@ export const useScroll = () => {
             const experienceSection = document.getElementById('experience');
             if (experienceSection) {
                 const rect = experienceSection.getBoundingClientRect();
-                if(
+                if (
                     rect.top >= 0 &&
                     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
                 ) {
@@ -22,7 +22,15 @@ export const useScroll = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const scrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+
     return {
-        showNavItem
+        showNavItem,
+        scrollToSection
     }
 }
