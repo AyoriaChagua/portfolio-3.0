@@ -30,7 +30,8 @@ export default function CustomButton({ button_type, onClick, text, icon }: Props
   return (
     <button className={
       `inline-flex items-center justify-center 
-      px-4 py-2 border-2 text-base font-medium rounded-md
+      lg:text-base text-sm text-ellipsis text-nowrap
+      lg:px-4 lg:py-2  px-2 py-1 border-2  font-medium rounded-md
       border-[#413DF9] text-white bg-transparent  from-[#413DF9] to-[#237BFE] 
       hover:bg-gradient-to-r
       focus:ring-gray-700
