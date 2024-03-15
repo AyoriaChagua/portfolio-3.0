@@ -1,10 +1,11 @@
-import { CustomButton, CustomNavbar, CustomText } from './components'
+import { CustomButton, CustomNavbar, CustomText, ExperienceCard } from './components'
 import { downloadCV, openWhatsAppWindow } from './utils/contact-functions'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { background_dark } from './utils/colors';
 import profile from './assets/images/profile.jpg';
+import { MOCK_EXPERIENCE } from './utils/mock-data';
 
 function App() {
 
@@ -53,18 +54,23 @@ function App() {
               </div>
             </div>
           </div>
-    
+
         </div>
       </div>
-      
+
       <hr className={`mt-16 xl:w-1/3 lg:w-2/5 md:w-4/6  sm:w-5/6 w-11/12 mx-auto max-w-1/3`} />
       <div className={`mt-16 xl:w-1/3 lg:w-2/5 md:w-4/6  sm:w-5/6 w-11/12 mx-auto max-w-1/3`}
         id='projects'>
-        <h3 className='text-white font-bold  text-lg '>My exprience</h3>
+        <h3 className='text-white font-bold  text-lg '>My experience</h3>
       </div>
-      <div className={`mt-16 xl:w-1/3 lg:w-2/5 md:w-4/6  sm:w-5/6 w-11/12 mx-auto max-w-1/3`}
+      <div className={`mt-16 xl:w-1/3 lg:w-2/5 md:w-4/6  sm:w-5/6 w-11/12 mx-auto max-w-1/3 flex flex-col gap-y-5`}
         id='experience'>
-
+        {MOCK_EXPERIENCE.map(experience => (
+          <ExperienceCard
+            key={experience.company}
+            experience={experience}
+          />
+        ))}
       </div>
     </div>
   )

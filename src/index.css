@@ -42,3 +42,16 @@
 #about {
   transition: transform 0.5s ease;
 }
+
+
+.tasks {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  max-height: 0;
+}
+
+.tasks.show {
+  max-height: 100px; 
+}
+
+
