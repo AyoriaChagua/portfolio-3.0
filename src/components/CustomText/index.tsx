@@ -13,7 +13,7 @@ export default function CustomText({ text_type, text }: Props) {
             styleClasses += "text"
             break;
         case "paragraph":
-            styleClasses += `text-[#BCB6E1] text-lg`
+            styleClasses += `text-[#BCB6E1] xl:text-lg lg:text-lg md:text-lg sm:text-sm  text-sm`
             break;
         case "gradient-text":
             styleClasses += "animated-gradient-text"
@@ -23,7 +23,7 @@ export default function CustomText({ text_type, text }: Props) {
             break;
     }
     return (
-        <div className={styleClasses}>
+        <div className={styleClasses }>
             {text}
         </div>
     )
