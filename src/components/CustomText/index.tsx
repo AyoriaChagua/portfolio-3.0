@@ -1,8 +1,6 @@
-import React, { ReactNode } from 'react'
-import { secondary_text } from '../../utils/colors';
 
 interface Props {
-    readonly text_type: "title" | "subtitle" | "paragraph" | "gradient-text";
+    readonly text_type: "title" | "subtitle" | "paragraph" | "gradient-text" | "sub-paragraph";
     readonly text: string;
 }
 
@@ -10,7 +8,7 @@ export default function CustomText({ text_type, text }: Props) {
     let styleClasses = "";
     switch (text_type) {
         case "subtitle":
-            styleClasses += "text"
+            styleClasses += "text-[#BCB6E1] xl:text-lg lg:text-lg md:text-lg sm:text-sm  text-sm font-bold"
             break;
         case "paragraph":
             styleClasses += `text-[#BCB6E1] xl:text-lg lg:text-lg md:text-lg sm:text-sm  text-sm`
@@ -18,12 +16,15 @@ export default function CustomText({ text_type, text }: Props) {
         case "gradient-text":
             styleClasses += "animated-gradient-text"
             break;
+        case "sub-paragraph":
+            styleClasses += "text-[#BCB6E1] text-[14px]"
+            break;
         default:
             styleClasses += "text"
             break;
     }
     return (
-        <div className={styleClasses }>
+        <div className={styleClasses}>
             {text}
         </div>
     )

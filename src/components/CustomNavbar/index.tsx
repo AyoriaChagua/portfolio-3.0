@@ -11,7 +11,7 @@ export default function CustomNavbar() {
         <div>
           {showNavItem &&
             <div className='flex items-center gap-3' onClick={() => scrollToSection('about')}>
-              <img src={cat_white} alt='cat-white' width={30} height={30} />
+              <img src={cat_white} alt='cat-white' width={35} height={35} />
               <div className='text-sm font-medium'>ayoria.x.ch</div>
             </div>
           }

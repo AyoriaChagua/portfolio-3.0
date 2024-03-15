@@ -6,3 +6,9 @@ interface Experience {
     readonly image: string
     readonly tasks: string[]
 }
+
+interface Skill {
+    icon: string
+    name: string
+    color: string
+}
