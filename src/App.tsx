@@ -20,7 +20,7 @@ function App() {
         <div className="" data-aos="fade-left">
           <div className="grid grid-cols-3 gap-4">
             <div className='col-span-2'>
-              <h1 className="text-[#fff]  text-5xl font-bold ">I'm Ayoria<br /> <span className='animated-gradient-text'>Web Developer</span> </h1>
+              <h1 className="text-[#fff]  text-5xl font-bold ">I'm Ayoria,<br /> <span className='animated-gradient-text'>Web Developer</span> </h1>
             </div>
             <div className='col-[3/4] row-span-3'>
               <img src={profile} alt='ayoriaXch' className='w-full h-auto'/>
