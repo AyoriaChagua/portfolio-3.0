@@ -30,10 +30,10 @@ export const MOCK_EXPERIENCE: Experience[] = [
         image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1710465949/portfolio/diajo.png",
         tasks: [
             "Development of web applications using React, Angular, and Vue.js",
-            
+
         ]
     },
-    
+
 ];
 
 export const MOCK_SKILLS: Skill[] = [
@@ -49,18 +49,13 @@ export const MOCK_SKILLS: Skill[] = [
     },
     {
         icon: "javascript",
-        name: "Javascript",
+        name: "JavaScript",
         color: "#F7DF1E"
     },
     {
         icon: "react",
         name: "React",
         color: "#61DAFB"
-    },
-    {
-        icon: "vue",
-        name: "TypeScript",
-        color: "#3178C6"
     },
     {
         icon: "nodejs",
@@ -96,5 +91,56 @@ export const MOCK_SKILLS: Skill[] = [
         icon: "sqlserver",
         name: "SQL Server",
         color: "#CC2927"
+    },
+    {
+        icon: "typescript",
+        name: "TypeScript",
+        color: "#007ACC"
+    },
+    {
+        icon: "reactnative",
+        name: "React Native",
+        color: "#61DAFB"
+    },
+    {
+        icon: "docker",
+        name: "Docker",
+        color: "#0db7ed"
+    },
+    {
+        icon: "redux",
+        name: "Redux",
+        color: "#764abc"
+    }
+];
+
+export const MOCK_PROJECTS: Project[] = [
+    {
+        title: "Mesa de partes",
+        description: "Fullstack solution developed at my work. a web system in charge of managing the company's acquisitions, creating purchase, payment or service orders.",
+        image: "",
+        link: "",
+        dates: ""
+    },
+    {
+        title: "LMS CEEC",
+        description: "Solution for the management and distribution of online educational content. Designed for the CEEC, it offers an intuitive and customizable learning experience.",
+        image: "",
+        link: "",
+        dates: ""
+    },
+    {
+        title: "Monitorme",
+        description: "Thesis project that seeks to control the use of programs during class hours in the laboratory. The system is responsible for monitoring students, notifying teachers and providing statistical analysis.",
+        image: "",
+        link: "",
+        dates: ""
+    },
+    {
+        title: "FruitTrack",
+        description: "Fullstack solution developed at my work. a web system in charge of managing the company's acquisitions, creating purchase, payment or service orders.",
+        image: "",
+        link: "https://github.com",
+        dates: "",
     }
 ]

@@ -46,7 +46,7 @@
 
 .tasks {
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.5s ease-out;
   max-height: 0;
 }
 
@@ -54,4 +54,18 @@
   max-height: 200px; 
 }
 
+.skills {
+  overflow: hidden;
+  transition: max-width 0.5s ease-out;
+  max-width: 0;
+}
 
+.skills.show-skills {
+  max-width: 90px;
+}
+
+
+
+.shaded-icon {
+  filter: drop-shadow(0 0 10px var(--shaded-icon-color));
+}

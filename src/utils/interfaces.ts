@@ -8,7 +8,15 @@ interface Experience {
 }
 
 interface Skill {
-    icon: string
-    name: string
-    color: string
+    readonly icon: iconSkill
+    readonly name: string
+    readonly color: string
+}
+
+interface Project {
+    readonly title: string
+    readonly description: string
+    readonly image: string
+    readonly link?: string
+    readonly dates: string
 }
