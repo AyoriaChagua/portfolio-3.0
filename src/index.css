@@ -64,8 +64,14 @@
   max-width: 90px;
 }
 
-
-
 .shaded-icon {
   filter: drop-shadow(0 0 10px var(--shaded-icon-color));
+}
+
+.expand-icon {
+  transition: transform 0.3s ease;
+}
+
+.expand-icon:hover {
+  transform: scale(1.3);
 }

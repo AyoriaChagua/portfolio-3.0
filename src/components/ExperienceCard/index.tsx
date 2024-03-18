@@ -1,12 +1,12 @@
 import { CustomText, CustomTimeLine } from '..';
-import { useExperienceCard } from '../../hooks/use-experience-card'
+import { useExperience } from '../../hooks/use-experience'
 
 interface Props {
     readonly experience: Experience
 }
 
 export default function ExperienceCard({ experience }: Props) {
-    const { show, showDescription } = useExperienceCard();
+    const { show, showDescription } = useExperience();
     return (
         <div className="experience-card flex flex-col justify-center w-full">
             <div className="flex flex-row gap-x-4   cursor-pointer items-center " onClick={showDescription}>

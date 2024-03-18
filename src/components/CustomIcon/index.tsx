@@ -78,6 +78,6 @@ export default function CustomIcon({ name, size, color, isActive }: Props) {
     }
     const variableCSS = isActive ? '--shaded-icon-color' : "";
     return (
-        <MyIcon size={size} color={color} className="shaded-icon" style={{ [variableCSS]: color } as any} />
+        <MyIcon  size={size} color={color} className="shaded-icon expand-icon" style={{ [variableCSS]: color } as any} />
     )
 }
