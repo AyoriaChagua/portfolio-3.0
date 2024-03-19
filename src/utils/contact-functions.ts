@@ -11,7 +11,7 @@ export const openWhatsAppWindow = () => {
 
 export const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = './assets/docs/CV-Ayoria.docx';
+    link.href = './docs/CV-Ayoria.docx';
     link.download = 'CV-Ayoria.docx';
     document.body.appendChild(link);
     link.click();
