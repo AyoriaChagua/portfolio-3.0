@@ -8,7 +8,7 @@ interface Experience {
 }
 
 interface Skill {
-    readonly icon: iconSkill
+    readonly icon: skill
     readonly name: string
     readonly color: string
 }
@@ -19,4 +19,6 @@ interface Project {
     readonly image: string
     readonly link?: string
     readonly dates: string
+    readonly tags: tag[]
+    readonly skills: skill[]
 }

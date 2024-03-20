@@ -119,28 +119,43 @@ export const MOCK_PROJECTS: Project[] = [
         title: "Mesa de partes",
         description: "Fullstack solution developed at my work. a web system in charge of managing the company's acquisitions, creating purchase, payment or service orders.",
         image: "",
-        link: "",
-        dates: ""
+        dates: "15 January, 2024 - actuality",
+        skills: ["nodejs", "react", "sqlserver", "css3", "javascript"],
+        tags: ["for company", "follow up", "full-stack"]
     },
     {
         title: "LMS CEEC",
         description: "Solution for the management and distribution of online educational content. Designed for the CEEC, it offers an intuitive and customizable learning experience.",
         image: "",
-        link: "",
-        dates: ""
+        dates: "15 January, 2024",
+        skills: ["reactnative", "css3", "postresql", "git", "nodejs", "express", "typescript"],
+        tags: ["finished", "for company", "full-stack"]
     },
     {
         title: "Monitorme",
         description: "Thesis project that seeks to control the use of programs during class hours in the laboratory. The system is responsible for monitoring students, notifying teachers and providing statistical analysis.",
         image: "",
-        link: "",
-        dates: ""
+        link: "https://github.com",
+        dates: "2024-07-01 - actuality",
+        skills: ["tailwind", "react", "nodejs", "postresql", "javascript", "express", "git", "mongodb"],
+        tags: ["follow up", "personal", "full-stack"]
     },
     {
         title: "FruitTrack",
         description: "Fullstack solution developed at my work. a web system in charge of managing the company's acquisitions, creating purchase, payment or service orders.",
         image: "",
         link: "https://github.com",
-        dates: "",
+        dates: "2024-04-15 - actuality",
+        skills: ["reactnative", "typescript", "redux", "spring", "java", "postresql", "git"],
+        tags: ["personal", "developing", "full-stack"]
+    },
+    {
+        title: "Ayoria.X.Blog",
+        description: "My personal blog",
+        image: "",
+        link: "https://github.com",
+        dates: "2024-06-01 - actuality",
+        skills: ["react", "tailwind", "redux", "spring", "java", "postresql", "docker","git"],
+        tags: ["personal", "developing", "full-stack"]
     }
 ]
