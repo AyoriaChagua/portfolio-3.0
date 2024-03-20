@@ -38,11 +38,6 @@ export const MOCK_EXPERIENCE: Experience[] = [
 
 export const MOCK_SKILLS: Skill[] = [
     {
-        icon: "html5",
-        name: "HTML5",
-        color: "#E44D26"
-    },
-    {
         icon: "css3",
         name: "CSS3",
         color: "#264de4"
@@ -111,6 +106,11 @@ export const MOCK_SKILLS: Skill[] = [
         icon: "redux",
         name: "Redux",
         color: "#764abc"
+    },
+    {
+        icon: "tailwind",
+        name: "Tailwind",
+        color: "#06B6D4"
     }
 ];
 

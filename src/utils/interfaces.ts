@@ -13,6 +13,10 @@ interface Skill {
     readonly color: string
 }
 
+interface AuxSkill extends Skill {
+    readonly isActive: boolean
+}
+
 interface Project {
     readonly title: string
     readonly description: string

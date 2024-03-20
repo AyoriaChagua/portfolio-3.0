@@ -12,12 +12,13 @@ import { FaCode } from "react-icons/fa";
 import { TbBrandReactNative } from "react-icons/tb";
 import { GrDocker } from "react-icons/gr";
 import { SiRedux } from "react-icons/si";
+import { TbBrandTailwind } from "react-icons/tb";
 
 
 
 
 interface Props {
-    readonly name: iconSkill
+    readonly name: skill
     readonly size: number
     readonly color: string
     readonly isActive: boolean
@@ -71,6 +72,9 @@ export default function CustomIcon({ name, size, color, isActive }: Props) {
             break;
         case "redux":
             MyIcon = SiRedux
+            break;
+        case "tailwind":
+            MyIcon = TbBrandTailwind
             break;
         default:
             MyIcon = FaCode

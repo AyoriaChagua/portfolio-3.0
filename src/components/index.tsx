@@ -8,3 +8,4 @@ export { default as SkillBox } from './SkillBox';
 export { default as Skill } from './Skill';
 export { default as CustomIcon } from './CustomIcon';
 export { default as ProjectCard } from './ProjectCard';
+export { default as ProjectBox } from './ProjectBox';
