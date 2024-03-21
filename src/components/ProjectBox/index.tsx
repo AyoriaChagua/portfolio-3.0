@@ -1,7 +1,13 @@
-import React from 'react'
+import { ProjectCard } from "..";
+import { useProjects } from "../../hooks/use-projects"
 
 export default function ProjectBox() {
+    const { projects } = useProjects();
     return (
-        <div>ProjectBox</div>
+        <div className="flex flex-col">
+            {projects.map(project =>
+                <ProjectCard project={project} key={project.title}/>
+            )}
+        </div>
     )
 }

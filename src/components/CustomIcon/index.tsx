@@ -13,6 +13,7 @@ import { TbBrandReactNative } from "react-icons/tb";
 import { GrDocker } from "react-icons/gr";
 import { SiRedux } from "react-icons/si";
 import { TbBrandTailwind } from "react-icons/tb";
+import { FaGithub } from "react-icons/fa";
 
 
 
@@ -22,10 +23,12 @@ interface Props {
     readonly size: number
     readonly color: string
     readonly isActive: boolean
+    readonly typeIcon?: "link" | "icon"
+    readonly url?: string
 }
 
 
-export default function CustomIcon({ name, size, color, isActive }: Props) {
+export default function CustomIcon({ name, size, color, isActive, typeIcon, url }: Props) {
     let MyIcon: IconType;
     switch (name) {
         case "html5":
@@ -68,7 +71,7 @@ export default function CustomIcon({ name, size, color, isActive }: Props) {
             MyIcon = TbBrandReactNative
             break;
         case "docker":
-            MyIcon = GrDocker 
+            MyIcon = GrDocker
             break;
         case "redux":
             MyIcon = SiRedux
@@ -76,12 +79,19 @@ export default function CustomIcon({ name, size, color, isActive }: Props) {
         case "tailwind":
             MyIcon = TbBrandTailwind
             break;
+        case "github":
+            MyIcon = FaGithub
+            break;
         default:
             MyIcon = FaCode
             break;
     }
     const variableCSS = isActive ? '--shaded-icon-color' : "";
     return (
-        <MyIcon  size={size} color={color} className="shaded-icon expand-icon" style={{ [variableCSS]: color } as any} />
+        typeIcon === "link" ? 
+        <a href={url} target="_blank" rel="noopener noreferrer">
+            <MyIcon size={size} color={color} className="shaded-icon expand-icon cursor-pointer" />
+        </a> : 
+        <MyIcon size={size} color={color} className="shaded-icon expand-icon" style={{ [variableCSS]: color } as any} />
     )
 }
