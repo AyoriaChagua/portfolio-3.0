@@ -6,12 +6,11 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 interface Props {
   readonly text: string
-  readonly button_type: "outline" | "fill"
   readonly icon: "download" | "github" | "whatsapp" | "arrowright"
   readonly onClick: () => void
 }
 
-export default function CustomButton({ button_type, onClick, text, icon }: Props) {
+export default function CustomButton({ onClick, text, icon }: Props) {
   let IconSelected: IconType
   switch (icon) {
     case "download":

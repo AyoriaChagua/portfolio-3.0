@@ -116,7 +116,15 @@ export const MOCK_SKILLS: Skill[] = [
 
 export const MOCK_PROJECTS: Project[] = [
     {
-        title: "Mesa de partes",
+        title: "ORDERING APP",
+        description: "Fullstack solution developed at my work. a web system in charge of managing the company's acquisitions, creating purchase, payment or service orders.",
+        image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1710987829/portfolio/ogx9swdggkgueuvlhqsw.png",
+        dates: "15 January, 2024",
+        skills: ["nodejs", "react", "sqlserver", "css3", "javascript"],
+        tags: ["for company", "follow up", "full-stack"]
+    },
+    {
+        title: "TREASURY WEB APPLICATION",
         description: "Fullstack solution developed at my work. a web system in charge of managing the company's acquisitions, creating purchase, payment or service orders.",
         image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1710987829/portfolio/ogx9swdggkgueuvlhqsw.png",
         dates: "15 January, 2024",
@@ -131,31 +139,4 @@ export const MOCK_PROJECTS: Project[] = [
         skills: ["reactnative", "css3", "postresql", "git", "nodejs", "express", "typescript"],
         tags: ["finished", "for company", "full-stack"]
     },
-    {
-        title: "Monitorme",
-        description: "Thesis project that seeks to control the use of programs during class hours in the laboratory. The system is responsible for monitoring, notifying  and providing statistical analysis.",
-        image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1710987829/portfolio/ogx9swdggkgueuvlhqsw.png",
-        link: "https://github.com",
-        dates: "15 January, 2024",
-        skills: ["tailwind", "react", "nodejs", "postresql", "javascript", "express", "git", "mongodb"],
-        tags: ["follow up", "personal", "full-stack"]
-    },
-    {
-        title: "FruitTrack",
-        description: "Fullstack solution developed at my work. a web system in charge of managing the company's acquisitions, creating purchase, payment or service orders.",
-        image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1710987829/portfolio/ogx9swdggkgueuvlhqsw.png",
-        link: "https://github.com",
-        dates: "15 January, 2024",
-        skills: ["reactnative", "typescript", "redux", "spring", "java", "postresql", "git"],
-        tags: ["personal", "developing", "full-stack"]
-    },
-    {
-        title: "Ayoria.X.Blog",
-        description: "My personal blog",
-        image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1710987829/portfolio/ogx9swdggkgueuvlhqsw.png",
-        link: "https://github.com",
-        dates: "15 January, 2024",
-        skills: ["react", "tailwind", "redux", "spring", "java", "postresql", "docker","git"],
-        tags: ["personal", "developing", "full-stack"]
-    }
 ]

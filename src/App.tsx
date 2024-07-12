@@ -1,11 +1,10 @@
-import { CustomButton, CustomNavbar, CustomText, ExperienceBox, ExperienceCard, ProjectBox, SkillBox } from './components'
+import { CustomButton, CustomNavbar, CustomText, ExperienceBox, ProjectBox, SkillBox } from './components'
 import { downloadCV, openWhatsAppWindow } from './utils/contact-functions'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { background_dark } from './utils/colors';
 import profile from './assets/images/profile.jpg';
-import { MOCK_EXPERIENCE } from './utils/mock-data';
 
 function App() {
 
@@ -45,12 +44,10 @@ function App() {
             <div className='xl:col-[1/3] lg:col-[1/3] md:col-[1/3] sm:col-[1/3] col-span-3'>
               <div className='flex flex-row gap-x-5'>
                 <CustomButton
-                  button_type='outline'
                   onClick={downloadCV}
                   text='Download CV'
                   icon='download' />
                 <CustomButton
-                  button_type='outline'
                   onClick={openWhatsAppWindow}
                   text='Write me'
                   icon='whatsapp' />

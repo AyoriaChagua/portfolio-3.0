@@ -1,4 +1,3 @@
-import React from 'react'
 import { ExperienceCard } from '..'
 import { useExperience } from '../../hooks/use-experience'
 

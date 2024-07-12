@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { CustomIcon } from ".."
 
 interface Props {
