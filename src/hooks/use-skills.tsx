@@ -11,7 +11,7 @@ export const useSkills = () => {
                 isActive: false
             }));
             setSkills(auxSkills);
-        })
+        })();
     }, [])
 
     const handleSkillClick = (index: number) => {
@@ -19,8 +19,8 @@ export const useSkills = () => {
             const updatedSkills: AuxSkill[] = [...prevState] as AuxSkill[];
             updatedSkills[index] = {...updatedSkills[index], isActive: !updatedSkills[index].isActive};
             const sortedSkills = [...updatedSkills].sort((a, b) => {
-                const aIsActive = 'isActive' in a ? (a as AuxSkill).isActive : (a as AuxSkill).isActive;
-                const bIsActive = 'isActive' in b ? (b as AuxSkill).isActive : (b as AuxSkill).isActive;
+                const aIsActive = 'isActive' in a ? (a).isActive : (a as AuxSkill).isActive;
+                const bIsActive = 'isActive' in b ? (b).isActive : (b as AuxSkill).isActive;
                 return aIsActive === bIsActive ? 0 : aIsActive ? -1 : 1;
             });
             return sortedSkills;

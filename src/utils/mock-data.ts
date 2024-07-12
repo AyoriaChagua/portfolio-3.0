@@ -69,7 +69,7 @@ export const MOCK_SKILLS: Skill[] = [
     },
     {
         icon: "spring",
-        name: "Spring Boot",
+        name: "SpringBoot",
         color: "#6DB33F"
     },
     {
@@ -84,7 +84,7 @@ export const MOCK_SKILLS: Skill[] = [
     },
     {
         icon: "sqlserver",
-        name: "SQL Server",
+        name: "SQLServer",
         color: "#CC2927"
     },
     {
@@ -94,7 +94,7 @@ export const MOCK_SKILLS: Skill[] = [
     },
     {
         icon: "reactnative",
-        name: "React Native",
+        name: "ReactNative",
         color: "#61DAFB"
     },
     {

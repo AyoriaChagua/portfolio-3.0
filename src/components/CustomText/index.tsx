@@ -23,10 +23,10 @@ export default function CustomText({ text_type, text }: Props) {
             styleClasses += "text-white text-[14px] font-bold"
             break;
         case "subtitle-project":
-            styleClasses += "text-[#fff] xl:text-lg lg:text-lg md:text-lg sm:text-sm  text-sm font-bold"
+            styleClasses += "text-[#BCB6E1]  xl:text-lg lg:text-lg md:text-lg sm:text-sm  text-sm font-bold"
             break;
         case "paragraph-project":
-            styleClasses += `text-[#BCB6E1] xl:text-lg lg:text-lg md:text-lg sm:text-sm  text-sm`
+            styleClasses += `text-[#BCB6E1] text-sm`
             break;
         default:
             styleClasses += "text"
