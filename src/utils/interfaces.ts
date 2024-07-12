@@ -18,11 +18,13 @@ interface AuxSkill extends Skill {
 }
 
 interface Project {
+    readonly summary: string
     readonly title: string
     readonly description: string
     readonly image: string
-    readonly link?: string
+    readonly github?: string
     readonly dates: string
     readonly tags: tag[]
     readonly skills: skill[]
+    readonly video_link?: string
 }
