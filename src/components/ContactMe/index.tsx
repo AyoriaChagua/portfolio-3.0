@@ -29,7 +29,7 @@ export default function ContactMe() {
                 </div>
                 <CustomButton icon="email" text="Send" buttonType="submit" size="large" />
             </form>
-            <div className="mt-8 flex flex-row justify-between">
+            <div className="mt-8 flex flex-col md:flex-row justify-between">
                 <div className="p-5 flex flex-col gap-5 justify-center items-center">
                     <FaLinkedin color="#2D86FF" size={30} />
                     <span className="text-md text-white">LinkedIn</span>
