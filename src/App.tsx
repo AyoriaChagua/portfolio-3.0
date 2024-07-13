@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { background_dark } from './utils/colors';
 import Hero from './components/Hero';
+import ContactMe from './components/ContactMe';
 
 function App() {
 
@@ -43,7 +44,7 @@ function App() {
         id='projects'>
         <CustomText text='Contact me' text_type='section' />
         <div className="flex flex-col gap-y-10">
-          {/* <ProjectBox /> */}
+          <ContactMe />
         </div>
       </div>
     </div>

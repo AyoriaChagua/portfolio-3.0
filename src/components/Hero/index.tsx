@@ -31,11 +31,13 @@ export default function Hero() {
                         <CustomButton
                             onClick={downloadCV}
                             text='Download CV'
-                            icon='download' />
+                            icon='download'
+                            size='small' />
                         <CustomButton
                             onClick={openWhatsAppWindow}
                             text='Write me'
-                            icon='whatsapp' />
+                            icon='whatsapp'
+                            size='small' />
                     </div>
                 </div>
             </div>

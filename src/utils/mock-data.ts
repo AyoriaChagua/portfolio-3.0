@@ -12,9 +12,9 @@ export const MOCK_EXPERIENCE: Experience[] = [
     },
     {
         title: "Mobile Developer",
-        company: "A365",
+        company: "Freelance",
         location: "Remote",
-        dates: "October 2023 - February 2024",
+        dates: "October 2023 - December 2024",
         image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1710466029/portfolio/ceec.jpg",
         tasks: [
             "Development of web applications using React, Angular, and Vue.js",
