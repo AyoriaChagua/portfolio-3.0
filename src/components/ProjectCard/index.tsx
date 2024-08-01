@@ -19,12 +19,10 @@ export default function ProjectCard({ project }: Props) {
                 {showVideo && project.video_link ? (
                     <Video autoPlay link={project.video_link} onClick={handleCard}/>
                 ) : (
-                    <button onClick={handleCard} className="w-full h-full rounded-lg p-0 border-0" style={{ backgroundImage: `url(${project.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+                    <button onClick={handleCard} className="w-full h-full sm:h-64 rounded-lg p-0 border-0" style={{ backgroundImage: `url(${project.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
                 )}
             </div>
-            <div
-                className={`col-span-7 relative ${showVideo ? '2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-7 sm:col-span-7' : '2xl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-3'}`}
-            >
+            <div className={`col-span-7 relative ${showVideo ? '2xl:col-span-7 xl:col-span-7 lg:col-span-7 md:col-span-7 sm:col-span-7' : '2xl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-7 sm:col-span-7'}`}>
                 <div className="mb-10">
                     <CustomText text={project.title} text_type="subtitle-project" />
                     <CustomText text={project.summary} text_type="paragraph-project" />
