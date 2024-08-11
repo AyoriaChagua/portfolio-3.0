@@ -111,6 +111,11 @@ export const MOCK_SKILLS: Skill[] = [
         icon: "tailwind",
         name: "Tailwind",
         color: "#06B6D4"
+    },
+    {
+        icon: "supabase",
+        name: "Supabase",
+        color: "#3ecf8e"
     }
 ];
 
@@ -120,20 +125,33 @@ export const MOCK_PROJECTS: Project[] = [
         summary: "Fullstack solution developed at my work. A web system in charge of managing the company's acquisitions, creating purchase, payment, or service orders.",
         description: "Developed a comprehensive full-stack solution to streamline the company's procurement process. The app manages acquisitions, creating and tracking purchase, payment, and service orders. Built with Node.js for the backend, React for the frontend, SQL Server for database management, and styled with CSS3. Also includes a React Native component for mobile access.",
         image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1720794251/portfolio/vdtdwvfiiauwbkm2rmyn.png",
-        dates: "15 May, 2024 - 15 July, 2024",
+        dates: "5 August, 2024 - 15 July, 2024",
         skills: ["nodejs", "react", "sqlserver", "css3", "javascript", "react-native"],
         tags: ["for company", "follow up", "full-stack"],
         video_link: "https://res.cloudinary.com/dcxg13hqx/video/upload/v1720804255/portfolio/ty67hvkzw8plwbhyqgpj.mp4"
     },
     {
-        title: "TREASURY WEB APPLICATION",
+        title: "WEB APPLICATION FOR TREASURY ",
         summary: "Fullstack solution developed at my work. A web system in charge of managing the company's acquisitions, creating purchase, payment, or service orders.",
-        description: "Created a full-stack application to manage the company's financial operations, including purchase, payment, and service orders. Utilized Node.js for the backend, React for the frontend, and SQL Server for the database. The UI is styled with CSS3, and React Native components allow mobile access for real-time updates.",
+        description: "I created a full-stack application to manage the company's financial operations, including purchase, payment, and service orders. Utilized Node.js for the backend, React for the frontend, Node.js for the backend and SQL Server for the database. The UI is styled with CSS3, and React components allow mobile access for real-time updates.",
         image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1720794431/portfolio/wpmn0jhfaqzmiftr1nio.png",
-        dates: "1 Jan, 2024 - 1 May, 2024",
+        dates: "1 July, 2024 - 1 May, 2024",
         skills: ["nodejs", "react", "sqlserver", "css3", "javascript", "react-native"],
         tags: ["for company", "follow up", "full-stack"],
         video_link: "https://res.cloudinary.com/dcxg13hqx/video/upload/v1720793925/portfolio/whcbcrtcz0rn5mb3rgko.mp4"
+    },
+    
+
+    {
+        title: "LANDING PAGE - ZEGEL IPAE",
+        summary: "The responsive page tracks visits and likes, using serverless functions in Supabase that can be applied to other projects.",
+        description: "Project developed for a research project at the institute. Fully responsive design to receive visits from different devices, the main task of the page is to track the visits that are made and how many people like the page, this functionality is also implemented in this portfolio so the development of the serverless functions in Supabase can be implemented in other projects.",
+        image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1723176742/portfolio/ovcc5ykwb4xfgjyrs0aq.png",
+        dates: "5 June, 2024",
+        skills: ["react", "tailwind", "git", "typescript", "supabase"],
+        tags: ["finished", "freelance", "full-stack"],
+        github: "https://github.com/AyoriaChagua/landing-page-zegel",
+        link: "https://ayoriachagua.github.io/landing-page-zegel/"
     },
     {
         title: "LMS CEEC",

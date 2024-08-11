@@ -27,4 +27,10 @@ interface Project {
     readonly tags: tag[]
     readonly skills: skill[]
     readonly video_link?: string
+    readonly link?: string
+}
+
+interface ThemeProps {
+    readonly theme: themeMode,
+    readonly handleChangeTheme: () => void
 }

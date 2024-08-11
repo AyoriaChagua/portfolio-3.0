@@ -32,18 +32,18 @@ export default function ContactMe() {
             <div className="mt-8 flex flex-col md:flex-row justify-between">
                 <div className="p-5 flex flex-col gap-5 justify-center items-center">
                     <FaLinkedin color="#2D86FF" size={30} />
-                    <span className="text-md text-white">LinkedIn</span>
-                    <span className="text-md text-white">Ayoria Chagua</span>
+                    <span className="text-md dark:text-white text-indigo-800">LinkedIn</span>
+                    <span className="text-md dark:text-white text-indigo-800">Ayoria Chagua</span>
                 </div>
                 <div className="p-5 flex flex-col gap-5 justify-center items-center">
                     <MdEmail color="#702DFF" size={30} />
-                    <span className="text-md text-white">Email</span>
-                    <span className="text-md text-white">ayoriachagua@gmail.com</span>
+                    <span className="text-md dark:text-white text-indigo-800">Email</span>
+                    <span className="text-md dark:text-white text-indigo-800">ayoriachagua@gmail.com</span>
                 </div>
                 <div className="p-5 flex flex-col gap-5 justify-center items-center">
                     <FaPhoneAlt color="#B615EE" size={25} />
-                    <span className="text-md text-white">Phone</span>
-                    <span className="text-md text-white">+51 933 374 956</span>
+                    <span className="text-md dark:text-white text-indigo-800">Phone</span>
+                    <span className="text-md dark:text-white text-indigo-800">+51 933 374 956</span>
                 </div>
             </div>
         </div>

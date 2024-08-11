@@ -9,3 +9,5 @@ export { default as Skill } from './Skill';
 export { default as CustomIcon } from './CustomIcon';
 export { default as ProjectCard } from './ProjectCard';
 export { default as ProjectBox } from './ProjectBox';
+export { default as LikeButton } from './LikeButton';
+export { default as ThemeButton } from './ThemeButton';

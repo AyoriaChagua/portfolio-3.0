@@ -34,10 +34,10 @@ export default function CustomButton({ onClick, text, icon, buttonType, size }: 
   }
   return (
     <button className={
-      `${size === "small" ? "w-32" : "w-full"} inline-flex items-center justify-center 
+      `${size === "small" ? "w-40" : "w-full"} inline-flex items-center justify-center 
       lg:text-base text-sm text-ellipsis text-nowrap
       lg:px-4 lg:py-2 px-2 py-1 border-2 font-medium rounded-md
-      border-[#413DF9] text-white bg-transparent from-[#413DF9] to-[#237BFE] 
+      border-[#413DF9] dark:text-white text-[#413DF9] bg-transparent from-[#b5b4ff] to-[#92bcfa] 
       hover:bg-gradient-to-r
       focus:ring-gray-700
       transform transition duration-500 hover:scale-110 gap-2`

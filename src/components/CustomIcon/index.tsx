@@ -1,25 +1,18 @@
 import { IconType } from "react-icons";
 import { LiaHtml5 } from "react-icons/lia";
-import { FaReact, FaNodeJs, FaJava } from "react-icons/fa";
-import { TbBrandTypescript, TbBrandCss3 } from "react-icons/tb";
-import { RiJavascriptLine } from "react-icons/ri";
+import { FaReact, FaNodeJs, FaJava, FaLink, FaCode, FaGithub } from "react-icons/fa";
+import { TbBrandTypescript, TbBrandCss3, TbBrandMongodb, TbBrandReactNative, TbBrandTailwind } from "react-icons/tb";
+import { RiJavascriptLine, RiSupabaseLine } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa6";
 import { BiLogoSpringBoot } from "react-icons/bi";
-import { SiPostgresql } from "react-icons/si";
-import { TbBrandMongodb } from "react-icons/tb";
+import { SiPostgresql, SiRedux } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
-import { FaCode } from "react-icons/fa";
-import { TbBrandReactNative } from "react-icons/tb";
 import { GrDocker } from "react-icons/gr";
-import { SiRedux } from "react-icons/si";
-import { TbBrandTailwind } from "react-icons/tb";
-import { FaGithub } from "react-icons/fa";
-
 
 
 
 interface Props {
-    readonly name: skill
+    readonly name: skill | "link"
     readonly size: number
     readonly color: string
     readonly isActive: boolean
@@ -82,16 +75,22 @@ export default function CustomIcon({ name, size, color, isActive, typeIcon, url 
         case "github":
             MyIcon = FaGithub
             break;
+        case "link":
+            MyIcon = FaLink
+            break;
+        case "supabase":
+            MyIcon = RiSupabaseLine
+            break;
         default:
             MyIcon = FaCode
             break;
     }
     const variableCSS = isActive ? '--shaded-icon-color' : "";
     return (
-        typeIcon === "link" ? 
-        <a href={url} target="_blank" rel="noopener noreferrer">
-            <MyIcon size={size} color={color} className="shaded-icon expand-icon cursor-pointer" />
-        </a> : 
-        <MyIcon size={size} color={color} className="shaded-icon expand-icon" style={{ [variableCSS]: color } as any} />
+        typeIcon === "link" ?
+            <a href={url} target="_blank" rel="noopener noreferrer">
+                <MyIcon size={size} color={color} className="shaded-icon expand-icon cursor-pointer" />
+            </a> :
+            <MyIcon size={size} color={color} className="shaded-icon expand-icon" style={{ [variableCSS]: color } as any} />
     )
 }

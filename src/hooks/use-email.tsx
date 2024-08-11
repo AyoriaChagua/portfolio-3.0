@@ -16,7 +16,12 @@ export const useEmail = () => {
             message,
         };
         try {
-            const response = await emailjs.send('service_j3w47s6', 'template_81y6wsh', templateParams, 'e_7og0cX3CUAScPO_');
+            const emailServiceId = import.meta.env.VITE_EMAIL_SERVICE_ID!;
+            const emailTemplateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID!;
+            const emailTempplateParams = import.meta.env.VITE_EMAIL_TEMPLATE_PARAMS!;
+            
+            const response = await emailjs.send(emailServiceId, emailTemplateId, templateParams, emailTempplateParams);
+
             if (response.status === 200) {
                 setName('');
                 setEmail('');
