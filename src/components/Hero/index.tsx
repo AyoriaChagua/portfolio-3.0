@@ -1,6 +1,5 @@
 import profile from '../../assets/images/profile.jpg';
 import CustomButton from '../CustomButton';
-import CustomText from '../CustomText';
 import { downloadCV, openWhatsAppWindow } from '../../utils/contact-functions'
 
 export default function Hero() {
