@@ -1,3 +1,4 @@
+import { useTheme } from "../../context/ThemeContext";
 import { useEmail } from "../../hooks/use-email";
 import CustomButton from "../CustomButton";
 import CustomInput from "../CustomInput";
@@ -6,16 +7,36 @@ import { MdEmail } from "react-icons/md";
 
 
 export default function ContactMe() {
-    const { email, handleSubmit, message, name, result, success, setEmail, setMessage, setName } = useEmail();
+    const {
+        email,
+        handleSubmit,
+        message,
+        name,
+        success,
+        setEmail,
+        setMessage,
+        setName,
+        isLoading
+    } = useEmail();
+    const {theme} = useTheme();
     return (
         <div className="my-8">
-            {success && <p className="text-green-500">{result}</p>}
+            {success && 
+            <div className={`success-checkmark ${theme === "dark" && "dark"}`}>
+                <div className={`check-icon ${theme === "dark" && "dark"}`}>
+                    <span className={`icon-line line-tip ${theme === "dark" && "dark"}`} />
+                    <span className={`icon-line line-long ${theme === "dark" && "dark"}`} />
+                    <div className={`icon-circle ${theme === "dark" && "dark"}`} />
+                    <div className={`icon-fix ${theme === "dark" && "dark"}`} />
+                </div>
+            </div>}
+            {isLoading && <div className="flex flex-row w-full justify-center mb-5"><div className="loader" /></div>}
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                     <CustomInput value={name} onChange={setName} id="name" />
                 </div>
                 <div>
-                    <CustomInput value={email} onChange={setEmail} id="email" />
+                    <CustomInput value={email} onChange={setEmail} id="email" required />
                 </div>
                 <div>
                     <textarea

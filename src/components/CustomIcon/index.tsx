@@ -5,7 +5,7 @@ import { TbBrandTypescript, TbBrandCss3, TbBrandMongodb, TbBrandReactNative, TbB
 import { RiJavascriptLine, RiSupabaseLine } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa6";
 import { BiLogoSpringBoot } from "react-icons/bi";
-import { SiPostgresql, SiRedux } from "react-icons/si";
+import { SiNestjs, SiPostgresql, SiRedux } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
 import { GrDocker } from "react-icons/gr";
 
@@ -80,6 +80,9 @@ export default function CustomIcon({ name, size, color, isActive, typeIcon, url 
             break;
         case "supabase":
             MyIcon = RiSupabaseLine
+            break;
+        case "nestjs":
+            MyIcon = SiNestjs
             break;
         default:
             MyIcon = FaCode

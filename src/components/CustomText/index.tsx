@@ -8,7 +8,7 @@ export default function CustomText({ text_type, text }: Props) {
     let styleClasses = "";
     switch (text_type) {
         case "subtitle":
-            styleClasses += "dark:text-[#BCB6E1] text-indigo-600 xl:text-lg lg:text-lg md:text-lg sm:text-sm  text-sm font-bold"
+            styleClasses += "dark:text-[#BFB7F0] text-indigo-600 xl:text-lg lg:text-lg md:text-lg sm:text-sm  text-sm font-bold"
             break;
         case "paragraph":
             styleClasses += `dark:text-[#BCB6E1] text-indigo-600 xl:text-lg lg:text-lg md:text-lg sm:text-sm  text-sm`
@@ -17,7 +17,7 @@ export default function CustomText({ text_type, text }: Props) {
             styleClasses += "animated-gradient-text"
             break;
         case "sub-paragraph":
-            styleClasses += "dark:text-[#BCB6E1] text-indigo-600 text-[14px]"
+            styleClasses += "dark:text-[#BCB6E1] text-indigo-600 text-[15.5px]"
             break;
         case "subtitle-white":
             styleClasses += "text-white text-[14px] font-bold"

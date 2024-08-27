@@ -6,20 +6,20 @@ export const MOCK_EXPERIENCE: Experience[] = [
         dates: "December 2023 - actuality",
         image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1710465893/portfolio/petroamerica.jpg",
         tasks: [
-            "Development of web applications using React, Angular, and Vue.js",
-            "Design and implementation of APIs in NodeJS with Express framework.",
+            "I was in charge of maintaining the billing systems that had direct communication with Sunat.",
+            "Work as a team to develop projects for different areas of the company, I was in charge of front and back development.",
+            "Provide maintenance to web applications previously developed within the company.",
         ]
     },
     {
-        title: "Mobile Developer",
+        title: "Fullstack Developer (web & mobile)",
         company: "Freelance",
         location: "Remote",
-        dates: "October 2023 - December 2024",
-        image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1710466029/portfolio/ceec.jpg",
+        dates: "September 2023 - July 2024",
+        image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1724728752/portfolio/hbo8kmgwokmg4qhoqnbw.png",
         tasks: [
-            "Development of web applications using React, Angular, and Vue.js",
-            "Design and implementation of APIs in NodeJS with Express framework.",
-            "Participation in code reviews to ensure the quality of the project."
+            "I analyzed the requirements and made an architectural design for a mobile education application.",
+            "Design and Development of a responsive landing page for an educational institution capable of tracking visits and likes."
         ]
     },
     {
@@ -29,19 +29,15 @@ export const MOCK_EXPERIENCE: Experience[] = [
         dates: "January 2023 - March 2023",
         image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1710465949/portfolio/diajo.png",
         tasks: [
-            "Development of web applications using React, Angular, and Vue.js",
-
+            "I analyzed  advertising alternatives for the company.",
+            "I analyzed  best email sending practices",
+            "Develop a massive email sending automation script."
         ]
     },
 
 ];
 
 export const MOCK_SKILLS: Skill[] = [
-    {
-        icon: "css3",
-        name: "CSS3",
-        color: "#264de4"
-    },
     {
         icon: "javascript",
         name: "JavaScript",
@@ -58,9 +54,9 @@ export const MOCK_SKILLS: Skill[] = [
         color: "#339933"
     },
     {
-        icon: "git",
-        name: "Git",
-        color: "#999999"
+        icon: "nestjs",
+        color: "#ea2845",
+        name: "NestJS"
     },
     {
         icon: "java",
@@ -76,11 +72,6 @@ export const MOCK_SKILLS: Skill[] = [
         icon: "postresql",
         name: "PostgreSQL",
         color: "#336791"
-    },
-    {
-        icon: "mongodb",
-        name: "MongoDB",
-        color: "#4DB33D"
     },
     {
         icon: "sqlserver",
@@ -121,6 +112,17 @@ export const MOCK_SKILLS: Skill[] = [
 
 export const MOCK_PROJECTS: Project[] = [
     {
+        title: "PETRO SYSTEM TLMP ",
+        summary: "Fullstack solution developed at my work. A web system in charge of managing the company's acquisitions, creating purchase, payment, or service orders.",
+        description: "I created a full-stack application to manage the company's financial operations, including purchase, payment, and service orders. Utilized Node.js for the backend, React for the frontend, Node.js for the backend and SQL Server for the database. The UI is styled with CSS3, and React components allow mobile access for real-time updates.",
+        image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1724727934/portfolio/yue06xoc9x60k6gukuvf.png",
+        dates: "1 July, 2024 - 1 May, 2024",
+        skills: ["nodejs", "react", "sqlserver", "css3", "typescript"],
+        tags: ["for company", "follow up", "full-stack", "responsive"],
+        video_link: "https://res.cloudinary.com/dcxg13hqx/video/upload/v1720793925/portfolio/whcbcrtcz0rn5mb3rgko.mp4",
+        github: "https://github.com/AyoriaChagua/petro-tlmp-web",
+    },
+    {
         title: "ORDERING APP",
         summary: "Fullstack solution developed at my work. A web system in charge of managing the company's acquisitions, creating purchase, payment, or service orders.",
         description: "Developed a comprehensive full-stack solution to streamline the company's procurement process. The app manages acquisitions, creating and tracking purchase, payment, and service orders. Built with Node.js for the backend, React for the frontend, SQL Server for database management, and styled with CSS3. Also includes a React Native component for mobile access.",
@@ -128,20 +130,9 @@ export const MOCK_PROJECTS: Project[] = [
         dates: "5 August, 2024 - 15 July, 2024",
         skills: ["nodejs", "react", "sqlserver", "css3", "javascript", "react-native"],
         tags: ["for company", "follow up", "full-stack"],
-        video_link: "https://res.cloudinary.com/dcxg13hqx/video/upload/v1720804255/portfolio/ty67hvkzw8plwbhyqgpj.mp4"
+        video_link: "https://res.cloudinary.com/dcxg13hqx/video/upload/v1720804255/portfolio/ty67hvkzw8plwbhyqgpj.mp4",
+        github: "https://github.com/AyoriaChagua/petroamerica-app"
     },
-    {
-        title: "WEB APPLICATION FOR TREASURY ",
-        summary: "Fullstack solution developed at my work. A web system in charge of managing the company's acquisitions, creating purchase, payment, or service orders.",
-        description: "I created a full-stack application to manage the company's financial operations, including purchase, payment, and service orders. Utilized Node.js for the backend, React for the frontend, Node.js for the backend and SQL Server for the database. The UI is styled with CSS3, and React components allow mobile access for real-time updates.",
-        image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1720794431/portfolio/wpmn0jhfaqzmiftr1nio.png",
-        dates: "1 July, 2024 - 1 May, 2024",
-        skills: ["nodejs", "react", "sqlserver", "css3", "javascript", "react-native"],
-        tags: ["for company", "follow up", "full-stack"],
-        video_link: "https://res.cloudinary.com/dcxg13hqx/video/upload/v1720793925/portfolio/whcbcrtcz0rn5mb3rgko.mp4"
-    },
-    
-
     {
         title: "LANDING PAGE - ZEGEL IPAE",
         summary: "The responsive page tracks visits and likes, using serverless functions in Supabase that can be applied to other projects.",
@@ -149,7 +140,7 @@ export const MOCK_PROJECTS: Project[] = [
         image: "https://res.cloudinary.com/dcxg13hqx/image/upload/v1723176742/portfolio/ovcc5ykwb4xfgjyrs0aq.png",
         dates: "5 June, 2024",
         skills: ["react", "tailwind", "git", "typescript", "supabase"],
-        tags: ["finished", "freelance", "full-stack"],
+        tags: ["finished", "freelance", "full-stack", "responsive"],
         github: "https://github.com/AyoriaChagua/landing-page-zegel",
         link: "https://ayoriachagua.github.io/landing-page-zegel/"
     },
